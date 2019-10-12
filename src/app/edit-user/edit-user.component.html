@@ -1,0 +1,25 @@
+<div class="container">
+    <span class="alert">
+        {{showMsg}}
+    </span>
+
+    <form [formGroup]="customForm" (ngSubmit)="onSubmit()">
+
+        <div class="row">
+            <div class="form-group col-md-12" *ngFor="let data of formData" class="form-group">
+                <label for="{{data.for}}">{{data.label}}</label>
+                <input *ngIf="data.control=='input'"  type="{{data.type}}" class="form-control" id="{{data.id}}"
+                    placeholder="{{data.placeholder}}" formControlName="{{data.control_name}}">
+
+                <div *ngIf="data.control=='button'">
+                    <button type="submit">Submit</button>
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+
+    <button><a [routerLink]="['']">
+            User List</a></button>
+</div>
