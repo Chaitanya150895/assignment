@@ -14,10 +14,10 @@ export class EditUserComponent implements OnInit {
   id: any;
 
   formData = [
-    { for: "email", control: "input", type: "text", label: "Email", placeholder: "Enter Email", id: "email", control_name: "email" },
-    { for: "first_name", control: "input", type: "text", label: "First Name", placeholder: "Enter First Name", id: "first_name", control_name: "first_name" },
-    { for: "last_name", control: "input", type: "text", label: "Last Name", placeholder: "Enter Last Name", id: "last_name", control_name: "last_name" },
-    { for: "avatar", control: "input", type: "text", label: "Avatar", placeholder: "Enter Avatar URL", id: "avatar", control_name: "avatar" },
+    { for: "email", control: "input", type: "text", label: "Email: ", placeholder: "Enter Email", id: "email", control_name: "email" },
+    { for: "first_name", control: "input", type: "text", label: "First Name: ", placeholder: "Enter First Name", id: "first_name", control_name: "first_name" },
+    { for: "last_name", control: "input", type: "text", label: "Last Name: ", placeholder: "Enter Last Name", id: "last_name", control_name: "last_name" },
+    { for: "avatar", control: "input", type: "text", label: "Avatar: ", placeholder: "Enter Avatar URL", id: "avatar", control_name: "avatar" },
     {for: "action", control: "button", type: "submit", label: " ", placeholder: "button", id: "action", control_name: "action" }
   ]
 
